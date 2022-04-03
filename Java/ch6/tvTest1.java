@@ -1,4 +1,4 @@
-public class TvTest1 {
+public class tvTest1 {
 
 	public static void main(String[] args) {
 		Tv[] tvArr = new Tv[3];
