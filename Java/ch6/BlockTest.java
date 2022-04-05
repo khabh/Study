@@ -18,6 +18,7 @@ class BlockTest {
 
         System.out.println("BlockTest bt2 = new BlockTest(); ");
         BlockTest bt2 = new BlockTest();
+        System.out.printf("%d %d",bt,bt2);
     }
 
 }

@@ -19,5 +19,6 @@ class DocumentTest {
         Document d1 = new Document();
         Document d2 = new Document("자바.txt");
         Document d3 = new Document();
+        System.out.printf("%d %d %d",d1,d2,d3);
     }
 }
