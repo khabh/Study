@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <form action="race_regstration">
+        <p>
+            <label for="first">First Name</label>
+            <input type="text" id="first" name="first-name">
+            <label for="last">Last Name</label>
+            <input type="text" id="last" name="last-name">
+        </p>
+
+        <h2>Select a Race:</h2>
+        <div>
+            <input type="radio" name="race" id="5K" value="Fun">
+            <label for="5K">Fun Run 5K</label><br>
+            <input type="radio" name="race" id="half" value="Half">
+            <label for="half">Half Marathon</label><br>
+            <input type="radio" name="race" id="full" value="Full">
+            <label for="full">Full Marathon</label>
+        </div>
+
+        <section>
+            <label for="email">Email</label>
+            <input type="email" name="Email" id="email" required>
+            <label for="password3">Password</label>
+            <input type="password" name="Password" id="password3" required>
+        </section>
+
+        <p>
+            <label for="age">Select Age Group</label>
+            <select name="age-group" id="age">
+                <option value="18-">under 18</option>
+                <option value="18-30">18-30</option>
+                <option value="30-50">30-50</option>
+                <option value="50+">50+</option>
+            </select>
+        </p>
+        <button>Register!</button>
+
+    </form>
+    <h1>Forms Demo</h1>
+    <form action="/tacos">
+        <!-- <button type="button">PLEASE DO NOT SUBIT THE FORM</button> -->
+        <p>
+            <label for="username">Enter a Username:</label>
+            <input id="username" type="text" placeholder="username" name="username" required>
+        </p>
+
+        <p>
+            <label for="password">Enter a Password:</label>
+            <input id="password" type="password" placeholder="password" name="password" minlength="5" maxlength="20">
+        </p>
+
+        <button>IN THE MIDDLE!</button>
+        <p>
+            <label for="color">Enter a color:</label>
+            <input type="color" id="color" name="color">
+        </p>
+
+        <p>
+            <label>
+                Enter a Number:
+                <input type="number" placeholder="enter a number" name="num" min="1" max="1000" step="3">
+            </label>
+        </p>
+        <button type="button">won't work</button>
+        <button>Submit!</button>
+        <input type="submit" value="Click Me">
+    </form>
+    <hr>
+    <button>Outside the form dose not work</button>
+
+    <h2>Hijacking Searches</h2>
+    <h3>Search Google</h3>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <h3>Search Youtube</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search Youtube</button>
+    </form>
+    <h3>Search Naver</h3>
+    <form action="https://search.naver.com/search.naver">
+        <input type="text" name="query">
+    </form>
+
+    <h2>More inputs!</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree-tos" id="agree" checked>
+        <label for="agree">I agree to everything</label>
+        <button>submit</button>
+
+        <p>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="large">
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="s" value="small">
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="m" value="mid">
+        </p>
+        <button>Submit</button>
+
+        <p>
+            <label for="meal">Please Select an Entree</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="veg" selected>Vegetarian</option>
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of Cheese:</label>
+            <input type="range" id="cheese" min="1" max="10" name="chees_level" value="3">
+        </p>
+        <button>Submit</button>
+
+        <p>
+            <label for="requests">Any Special Requests?</label>
+            <br>
+            <textarea name="Requests?" id="requests" cols="40" rows="10" placeholder="please enter the text"></textarea>
+        </p>
+    </form>
+</body>
+
+</html>
