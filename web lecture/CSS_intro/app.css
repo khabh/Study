@@ -1,0 +1,105 @@
+h1{
+    text-align: center;
+    /* font-weight: normal; */
+    text-decoration: #f78120 underline;
+    letter-spacing: 5px;
+    font-size: 77px;
+    font-family: Verdana, monospace;
+}
+p{
+    font-weight: bold;
+    line-height: 1.5;
+
+    
+}
+a{
+    text-decoration: none;
+}
+button{
+    background-color: bisque;
+}
+#button1{
+    background-color: azure;
+}
+
+span{
+    color: #f78120;
+    
+}
+.chapter{
+    background-color: #f2cc8f;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+.any a{
+    color: antiquewhite;
+
+}
+/* p+h2{
+   color: blue; 
+} */
+
+/* div> a{
+    color: black;
+} */
+
+input[type="password"] {
+    color: #f2cc8f;
+}
+
+section[class="post"]{
+    font-size: 40px;
+}
+/* a[href*="google"]{
+    color: aqua;
+} */
+button:hover{
+    background-color: #e63946;
+    color: #f1faee;
+}
+h2::first-letter{
+    font-size: 30px;
+}
+p::selection{
+    background-color: #e63946;
+}
+
+/* 우선 순위 linlinestyle>id>class>Element */
+
+#one{
+    width: 500px;
+
+    background-color: #f1faee;
+    background-color: #ffcdb2;
+    border-width: 5px;
+    border-color: antiquewhite;
+    border-style: solid;
+    padding: 20px;
+    /* box-sizing: border-box; */
+}
+#two{
+    width: 500px;
+
+    background-color: #f1faee;
+    background-color: #ffb4a2;
+    border-color: #b5838d;
+    border-style: solid;
+    border-width: 5px;
+    padding: 20px;
+}
+#three{
+    width: 500px;
+
+    background-color: #f1faee;
+    background-color: #e5989b;
+    border: 5px solid #6d6875;
+    /* border-radius: 10px; */
+    padding: 20px;
+}
+
+/* width |style |color */
+/* top|right|buttom|left */
+body{
+    margin: 20px;
+}
