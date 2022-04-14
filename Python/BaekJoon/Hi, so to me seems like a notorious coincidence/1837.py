@@ -1,14 +1,5 @@
-def goodOrBad():
-    global result
-    for i in result:
-        for j in result:
-            if j*i == p:
-                print("BAD", min(j, i))
-                return 0
-
-    print("GOOD")
-
-
+pq = []
+p_q = []
 p, k = map(int, input().split())
 
 array = [True for i in range(k+1)]
@@ -19,4 +10,10 @@ for i in range(2, int(k**0.5)+1):
             array[j] = False
 
 result = [i for i in range(2, k) if array[i] == True]
-goodOrBad()
+for i in result:
+    for j in result:
+        if p == i*j:
+            print("BAD", min(i, j))
+
+else:
+    print("GOOD")
