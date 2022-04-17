@@ -1,6 +1,3 @@
-from tkinter.tix import Tree
-from turtle import Turtle
-
 
 n, m = map(int, input().split())
 
