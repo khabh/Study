@@ -1,3 +1,4 @@
+# 메모리 초과
 num = int(input())
 array = []
 move = [[0, 0]]
@@ -10,8 +11,9 @@ def moveLeft(x1, y1):
     global array
     global move
     global cnt
-    if (x1+array[x1][y1]) <= 3:
-        if x1+array[x1][y1] == 3 and y1 == 3:
+    global num
+    if (x1+array[x1][y1]) <= num-1:
+        if x1+array[x1][y1] == num-1 and y1 == num-1:
             cnt += 1
         else:
             move.append([x1+array[x1][y1], y1])
@@ -21,8 +23,9 @@ def moveDown(x1, y1):
     global array
     global move
     global cnt
-    if (y1+array[x1][y1]) <= 3:
-        if (y1+array[x1][y1]) == 3 and x1 == 3:
+    global num
+    if (y1+array[x1][y1]) <= num-1:
+        if (y1+array[x1][y1]) == num-1 and x1 == num-1:
             cnt += 1
         else:
             move.append([x1, y1+array[x1][y1]])
