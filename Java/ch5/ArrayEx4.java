@@ -1,5 +1,3 @@
-package ch5;
-
 public class ArrayEx4 {
 
 	public static void main(String[] args) {
