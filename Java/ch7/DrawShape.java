@@ -10,7 +10,7 @@ public class DrawShape {
         Circle c = new Circle(new Point (150, 150), 50);
 
         t.draw();
-        c.draw();
+        c.draw(); // Shape와 Circle에 draw()가 모두 정의되어 있을 경우 자손 클래스의 메서드가 호출된다.
 
     }
 }
