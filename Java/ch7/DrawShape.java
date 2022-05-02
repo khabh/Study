@@ -1,74 +1,74 @@
-public class DrawShape {
-    public static void main(String[] args) {
-        Point[] p = {
-            new Point(100, 100),
-            new Point(140, 50),
-            new Point(200, 100)
-        };
+// public class DrawShape {
+//     public static void main(String[] args) {
+//         Point[] p = {
+//             new Point(100, 100),
+//             new Point(140, 50),
+//             new Point(200, 100)
+//         };
 
-        Triangle t = new Triangle(p);
-        Circle c = new Circle(new Point (150, 150), 50);
+//         Triangle t = new Triangle(p);
+//         Circle c = new Circle(new Point (150, 150), 50);
 
-        t.draw();
-        c.draw(); // Shape와 Circle에 draw()가 모두 정의되어 있을 경우 자손 클래스의 메서드가 호출된다.
+//         t.draw();
+//         c.draw(); // Shape와 Circle에 draw()가 모두 정의되어 있을 경우 자손 클래스의 메서드가 호출된다.
 
-    }
-}
+//     }
+// }
 
-class Shape {
-    String color = "black";
+// class Shape {
+//     String color = "black";
 
-    void draw() {
-        System.out.printf("[color=%s]%n", color);
-    }
-}
+//     void draw() {
+//         System.out.printf("[color=%s]%n", color);
+//     }
+// }
 
-class Point {
-    int x;
-    int y;
+// class Point {
+//     int x;
+//     int y;
 
-    Point(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
+//     Point(int x, int y) {
+//         this.x = x;
+//         this.y = y;
+//     }
 
-    Point() {
-        this(0,0);
-    }
+//     Point() {
+//         this(0,0);
+//     }
 
-    String getXY() {
-        return "(" + x + "," + y + ")";
-    }
-}
+//     String getXY() {
+//         return "(" + x + "," + y + ")";
+//     }
+// }
 
-class Circle extends Shape {
-    Point center;
-    int r;
+// class Circle extends Shape {
+//     Point center;
+//     int r;
 
-    Circle() {
-        this(new Point(0, 0), 100);
-    }
+//     Circle() {
+//         this(new Point(0, 0), 100);
+//     }
 
-    Circle(Point center, int r) {
-        this.center = center;
-        this.r = r;
-    }
+//     Circle(Point center, int r) {
+//         this.center = center;
+//         this.r = r;
+//     }
 
-    void draw() {
-        System.out.printf("[center = (%d, %d) , r = %d, color = %s]%n", center.x, center.y, r, color);
-    }
-}
+//     void draw() {
+//         System.out.printf("[center = (%d, %d) , r = %d, color = %s]%n", center.x, center.y, r, color);
+//     }
+// }
 
-class Triangle extends Shape {
-    Point[] p = new Point[3];
+// class Triangle extends Shape {
+//     Point[] p = new Point[3];
 
-    Triangle(Point[] p) {
-        this.p = p;
-    }
+//     Triangle(Point[] p) {
+//         this.p = p;
+//     }
 
-    void draw() {
-        System.out.printf("[p1=%s, p2=%s, p3=%s, color=%s]%n",
-            p[0].getXY(), p[1].getXY(), p[2].getXY(), color);
-    }
+//     void draw() {
+//         System.out.printf("[p1=%s, p2=%s, p3=%s, color=%s]%n",
+//             p[0].getXY(), p[1].getXY(), p[2].getXY(), color);
+//     }
 
-}
+// }

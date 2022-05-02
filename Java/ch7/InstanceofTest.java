@@ -13,6 +13,8 @@ class InstanceofTest {
             System.out.println("This is a Object instance.");
         }
 
+        System.out.println(fe.getClass().getName());
+
     }
 }
 
