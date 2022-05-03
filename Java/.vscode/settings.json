@@ -1,3 +1,8 @@
 {
-  "java.project.sourcePaths": ["ch7", "ch4", "ch6"]
+  "java.project.sourcePaths": [
+    "ch7",
+    "ch6",
+    "ch4",
+    "codingtest"
+  ]
 }
