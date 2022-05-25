@@ -21,7 +21,8 @@ def union(a, b, parent):
 n, m = map(int, input().split())
 graph = []
 parent = [i for i in range(n+1)]
-result = []
+result = 0
+last = 0
 
 for _ in range(m):
     a, b, c = map(int, input().split())
@@ -30,13 +31,13 @@ for _ in range(m):
 
 graph.sort()
 
+
 for i in graph:
     cost, a, b = i
     if find_parent(a, parent) != find_parent(b, parent):
         union(a, b, parent)
-        result.append(cost)
+        result += cost
+        last = cost
 
 
-result.sort()
-
-print(sum(result[:-1]))
+print(result - last)
