@@ -1,4 +1,7 @@
-numbers = input()
-cnt = min(numbers.count("01"), numbers.count("10"))
+import sys
+input = sys.stdin.readline
 
-print(cnt)
+numbers = input()
+cnt = numbers.count("01") + numbers.count("10")
+
+print((cnt+1)//2)
