@@ -1,47 +1,47 @@
-class DefaultMethodTest {
-    public static void main(String[] args) {
-        // Enter Your Code Here
-        Child c = new Child();
-        c.method1();
-        c.method2();
-        MyInterface.staticMethod();
-        MyInterface2.staticMethod();
-        // staticMethod() in MyInterface.
-        // staticMethod() in MyInterface2
-    }
-}
+// class DefaultMethodTest {
+//     public static void main(String[] args) {
+//         // Enter Your Code Here
+//         Child c = new Child();
+//         c.method1();
+//         c.method2();
+//         MyInterface.staticMethod();
+//         MyInterface2.staticMethod();
+//         // staticMethod() in MyInterface.
+//         // staticMethod() in MyInterface2
+//     }
+// }
 
-class Child extends Parent implements MyInterface,MyInterface2 {
-    public void method1() {
-        System.out.println("method1() in Child"); //오버라이딩
-    }
-}
+// class Child extends Parent implements MyInterface,MyInterface2 {
+//     public void method1() {
+//         System.out.println("method1() in Child"); //오버라이딩
+//     }
+// }
 
-class Parent {
-    public void method2() {
-        System.out.println("method() in Parent.");
-    }
-}
+// class Parent {
+//     public void method2() {
+//         System.out.println("method() in Parent.");
+//     }
+// }
 
-interface MyInterface {
-    default void method1() {
-        System.out.println("method() in MyInterface.");
-    }
-    default void method2(){
-        System.out.println("method2() in MyInterface.");
-    }
-    static void staticMethod() {
-        System.out.println("staticMethod() in MyInterface.");
-    }
-}
+// interface MyInterface {
+//     default void method1() {
+//         System.out.println("method() in MyInterface.");
+//     }
+//     default void method2(){
+//         System.out.println("method2() in MyInterface.");
+//     }
+//     static void staticMethod() {
+//         System.out.println("staticMethod() in MyInterface.");
+//     }
+// }
 
-interface MyInterface2 {
-    default void method1() {
-        System.out.println("method() in MyInterface2");
-    }
-    static void staticMethod() {
-        System.out.println("staticMethod() in MyInterface2");
-    }
-}
+// interface MyInterface2 {
+//     default void method1() {
+//         System.out.println("method() in MyInterface2");
+//     }
+//     static void staticMethod() {
+//         System.out.println("staticMethod() in MyInterface2");
+//     }
+// }
 
 
