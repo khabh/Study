@@ -1,5 +1,6 @@
+cnt = 1
+
 while True:
-    cnt = 1
     l, p, v = map(int, input().split())
     if l == p == v == 0:
         break

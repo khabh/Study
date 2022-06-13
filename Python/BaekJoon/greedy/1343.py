@@ -33,3 +33,8 @@ if -1 in result:
     print(-1)
 else:
     print("".join(result))
+
+# array = input()
+# array.replace('XXXX', 'AAAA')
+# array.replace('XX','BB')
+# print(array)

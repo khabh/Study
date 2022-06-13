@@ -1,8 +1,8 @@
 import sys
 
 n = int(sys.stdin.readline())
-distance = list(map(int, sys.stdin.readline().split()))
-price = list(map(int, sys.stdin.readline().split()))
+distance = list(map(int, sys.stdin.readline().rstrip().split()))
+price = list(map(int, sys.stdin.readline().rstrip().split()))
 minPrice = price[0]
 result = 0
 
