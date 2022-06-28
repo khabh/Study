@@ -1,4 +1,16 @@
-n = int(input())
-d = [False] * 1000000
+import sys
+input = sys.stdin.readline
 
-coin = list(map(int, input().split()))
+n = int(input())
+coins = list(map(int,input().split()))
+coins.sort()
+
+target = 1
+for coin in coins:
+    if target < coin:
+        break
+    target += coin
+        
+
+print(target)
+
