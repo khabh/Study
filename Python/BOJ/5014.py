@@ -1,6 +1,7 @@
 import sys
 from collections import deque
 
+
 def bfs():
     queue = deque([(S, 0)])
     visit = [False] * (F + 1)
@@ -19,6 +20,7 @@ def bfs():
             queue.append((d, cnt + 1))
 
     return 'use the stairs'
+
 
 read = sys.stdin.readline
 F, S, G, U, D = map(int, read().split())
