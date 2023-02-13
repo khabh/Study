@@ -1,18 +1,16 @@
 import sys
 
 
-def solve(count):
+def solve(index, count):
     if count == M:
         result.append(' '.join(map(str, answer)))
         return
     prev = 0
-    for i in range(N):
-        if not visit[i] and numbers[i] != prev:
-            visit[i] = True
+    for i in range(index, N):
+        if numbers[i] != prev:
             prev = numbers[i]
             answer.append(numbers[i])
-            solve(count + 1)
-            visit[i] = False
+            solve(i, count + 1)
             answer.pop()
 
 
@@ -21,6 +19,5 @@ numbers = list(map(int, sys.stdin.readline().split()))
 numbers.sort()
 answer = []
 result = []
-visit = [False] * N
-solve(0)
+solve(0, 0)
 print('\n'.join(result))
