@@ -3,6 +3,7 @@ package hello.hellospring;
 //import hello.hellospring.repository.JdbcMemberRepository;
 //import hello.hellospring.repository.JdbcTemplateMemberRepository;
 //import hello.hellospring.repository.JpaMemberRepository;
+import hello.hellospring.aop.TimeTraceAop;
 import hello.hellospring.repository.MemberRepository;
 //import hello.hellospring.repository.MemoryMemberRepository;
 import hello.hellospring.service.MemberService;
@@ -21,6 +22,11 @@ public class SpringConfig {
     public SpringConfig(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
+
+//    @Bean
+//    public TimeTraceAop timeTraceAop() {
+//        return new TimeTraceAop();
+//    }
 
 //    private final EntityManager em;
 //
